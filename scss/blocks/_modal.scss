@@ -1,0 +1,44 @@
+
+
+.modal-body{
+    position: absolute;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100% !important;
+    max-width: 1000px !important;
+    background-color: #8899A6;
+}
+.modal-content{
+    align-items: center;
+}
+.site-body{
+    overflow-y: hidden;
+}
+.modal-none{
+    display: none;
+}
+
+
+.star-date-time{
+    padding: 0;
+}
+
+.close-modal{
+    border: none;
+    background-color: transparent;
+}
+.modal-dialog{
+    max-width: 1000px !important;
+}
+.modal__categories{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.modal__imdb-link{
+    text-decoration: none;
+}
+.modal__iframe{
+}

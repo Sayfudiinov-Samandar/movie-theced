@@ -1,0 +1,73 @@
+.site-title{
+    font-family: "Mono", "Times, serif", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 62px;
+    color: #8899A6;
+}
+
+
+.site-header{
+    background-color: #8899A6 !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar{
+    background-color: #8899A6 !important;
+}
+
+.input-style{
+    border-radius: 10px;
+    border: 1px solid #0d6efd;
+    background-color: transparent;
+    padding-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 300px;
+    color: #fff;
+    outline: none;
+    &::placeholder{
+        color: #fff;
+    }
+}
+.year-box{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    margin-right: 10px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid #0d6efd;
+    input{
+        width: 150px;
+        margin: 0;
+        padding: 5px;
+        border-radius: 8px;
+    }
+}
+.form-select{
+    
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #0d6efd;  
+    background-color: transparent;
+}
+
+option{
+    background-color: #8899A6;
+    color: #fff;
+
+}
+.js-sort-form-abc{
+    width: 50%;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #0d6efd;  
+    background-color: transparent;
+}

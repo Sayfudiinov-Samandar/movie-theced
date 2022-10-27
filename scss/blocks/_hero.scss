@@ -1,0 +1,93 @@
+.list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.list__item{
+    width: 100%;
+    max-width: 380px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: #8899A6;
+
+}
+.list__item-img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 280px;
+}
+
+
+.list__item-title{
+    margin: 5px 0 20px 0;
+    padding: 0 15px 0 15px;
+    color: #15202B;
+}
+
+.star-date-time{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+}
+.list__star{
+    position: relative;
+    padding-left: 25px;
+    color: #15202B;
+    &::before{
+        content: "";
+        position: absolute; 
+        top: 0px;
+        left: 0px;
+        
+        background-image: url("../../images/star.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.list__year{
+    position: relative;
+    padding-left: 25px;
+    color: #15202B;
+    &::before{
+        content: "";
+        position: absolute; 
+        top: 0px;
+        left: 0px;        
+        background-image: url("../../images/calendar.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+}
+.list__start-time{
+    position: relative;
+    padding-left: 25px;
+    color: #15202B;
+    &::before{
+        content: "";
+        position: absolute; 
+        top: 0px;
+        left: 0px;        
+        background-image: url("../../images/clock.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.list__categories{
+    padding-left: 15px;
+    color: #15202B;
+}
+.list__learn-more{
+    margin-left: 15px;
+}
