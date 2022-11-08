@@ -27,7 +27,7 @@ const elEndYear=document.querySelector(".end-year")
 // Categories btn
 const elSelect = elSearchForm.querySelector(".form-select");
 let selectFragment = new DocumentFragment();
-let categoriesString = []
+let categoriesString = new Set()
 
 // Sort A-Z
 let elSelectSortBy=document.querySelector(".sort_by");
@@ -78,7 +78,7 @@ elList.addEventListener("click",function(evt){
 
 function filetSearchInfo(item){
     return movies.filter(elm=>{
-        let findMovies=elm.title.match(item) && (elSelect.value=="All" || elm.categories.includes(elSelect.value)) && (elStartYear.value==""||elm.year>=Number(elStartYear.value)) &&(elEndYear.value=="" || elm.year<=Number(elEndYear.value))
+        let findMovies=elm.title.match(item) && (elSelect.value=="All" || elm.categories.includes(elSelect.value)) && (elStartYear.value=="" || elm.year>=Number(elStartYear.value)) &&(elEndYear.value=="" || elm.year<=Number(elEndYear.value))
 
 
         return findMovies
@@ -86,14 +86,17 @@ function filetSearchInfo(item){
 }
 
 function getVategoriesForSelect(){
+
     movies.forEach(item=>{
         let categoriesMovie=item.categories;
+
         categoriesMovie.forEach(elm=>{
-            if (!categoriesString.includes(elm)) {
-                categoriesString.push(elm)
-            }
+            categoriesString.add(elm)
         })
     })
+
+
+
 }
 
 function showCategoriesSelect(){
